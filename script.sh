@@ -6,7 +6,7 @@ echo "02. Clone Weeb Projkt source"
 echo "03. Clone Bootleggers  source"
 read base
 
-if [ $base = 1 ]
+if [ $base = 01 ]
 then
 mkdir derp
 cd derp
@@ -25,7 +25,7 @@ git clone https://github.com/LineageOS/android_vendor_qcom_opensource_fm-commons
 
 fi
 
-if [ $base = 2 ]
+if [ $base = 02 ]
 then
 mkdir weeb
 cd weeb
@@ -41,4 +41,3 @@ git clone https://github.com/Daisy-R-sources/kernel_xiaomi_sleepy.git -b LA.UM.9
 fi
 
 echo "Lol why do i do all the stuffs do something at least...."
-
