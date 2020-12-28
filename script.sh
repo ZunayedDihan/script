@@ -8,6 +8,8 @@ read base
 
 if [ $base = 1 ]
 then
+mkdir derp
+cd derp
 repo init --depth=1 -u git://github.com/DerpFest-11/manifest.git -b 11
 repo sync --force-sync --no-tags --no-clone-bundle
 echo "Adding Device Tree, Vendor and Kernel Sources"
@@ -25,6 +27,8 @@ fi
 
 if [ $base = 2 ]
 then
+mkdir weeb
+cd weeb
 echo "Cloning Weeb Projkt sources along with vendor/weeb"
 repo init --depth=1 -u https://github.com/WeebProjekt/platform_manifest -b cheese
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
